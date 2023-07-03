@@ -1,9 +1,11 @@
 import { Stack, Typography } from "@mui/material";
 import React from "react";
 
-import Icon from "../assets/icons/gym.png";
 
-const BodyPart = ({ item, setBodyPart, bodyPart }) => {
+const BodyPart = ({ item, setBodyPart, bodyPart,imgs }) => {
+
+    const imgObject = imgs.find((img) => img.part === item);
+    const imgLink = imgObject ? imgObject.img :'';
   return (
     <Stack
       type="button"
@@ -25,7 +27,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
       }}
     >
       <img
-        src={Icon}
+        src={imgLink}
         alt="dumbbell"
         style={{ width: "40px", height: "40px" }}
       />
