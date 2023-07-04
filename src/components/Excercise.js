@@ -15,6 +15,22 @@ const Excercise = ({excercises,setExcercises,bodyPart}) => {
     window.scrollTo({ top: 1450, behavior: 'smooth' })
   }
 
+  useEffect(()=>{
+    const fetchExcercisesData=async ()=>{
+      let excercisesData=[];
+
+      if(bodyPart==='all'){
+        excercisesData=await  fetchData('https://exercisedb.p.rapidapi.com/exercises',excerciseOptions);
+      }else{
+        excercisesData=await  fetchData(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`,excerciseOptions);
+      }
+
+      setExcercises(excercisesData);
+    }
+    fetchExcercisesData();
+
+  },[bodyPart])
+
   
 const startIndex = (currentPage - 1) * excercisesPerPage;
 const endIndex = startIndex + excercisesPerPage;
@@ -22,9 +38,9 @@ const displayedExcercises = excercises.slice(startIndex, endIndex);
 
   console.log(excercises)
   return (
-    <Box id='excercises' sx={{marginTop:{lg:'110px'}}} mt='50px' p='20px'>
+    <Box id='excercises' sx={{marginTop:{lg:'110px'}}} p='20px'>
       <Typography variant='h4' mb='46px' >
-        Showing Results
+        Showing <span style={{color:'brown',fontWeight:'bold'}}>Results</span>
       </Typography>
       <Stack direction='row' flexWrap='wrap' justifyContent='center' sx={{gap:{lg:'110px',xs:'50px'}}}>
         {displayedExcercises.map((excercise,index)=>(

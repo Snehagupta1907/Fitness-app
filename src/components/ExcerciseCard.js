@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const ExcerciseCard = ({excercise}) => {
   return (
     <Link className='excercise-card' to={`/exercise/${excercise.id}`} style={{borderTop:"4px solid #653b46",textDecoration:'none'}}>
-        <img src={excercise.gifUrl} alt={excercise.name} Loading='lazy'/>
+        <img src={excercise.gifUrl} alt={excercise.name} Loading='lazy' style={{height:'200px',width:'200px'}}/>
         <Stack direction='row'>
             <Button sx={{marginLeft:'20px',color:'#fff',background:"#ffa9a9",fontSize:'14px',borderRadius:'20px',textTransform:'capitalize'}}>
                 {excercise.bodyPart}
@@ -16,7 +16,7 @@ const ExcerciseCard = ({excercise}) => {
                 {excercise.target}
             </Button>
         </Stack>
-        <Typography ml='21px' color='#000' fontWeight='bold' mt='11px' pb='10px' textTransform='capitalize' fontSize='20px'>
+        <Typography ml='21px' color='#000' fontWeight='bold' mt='11px' pb='10px' textTransform='capitalize' fontSize='15px'>
             {excercise.name}
         </Typography>
     
