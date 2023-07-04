@@ -13,7 +13,7 @@ const Banner = () => {
         Transform your body,<br/> Elevate your fitnesss
         </Typography>
         <Button variant='contained' style={{ backgroundColor:'#653b46'}} >Get started</Button>
-        <Typography fontWeight={600} color='pink' sx={{opacity:0.2,display:{lg:'block',xs:'none'}}} fontSize={200}>Excercise</Typography>
+        <Typography fontWeight={600} color='pink' sx={{opacity:0.2,display:{lg:'block',xs:'none'}}} fontSize={200}>Exercises</Typography>
         <Box className='hero-banner-img'>
         <img src={bannerImage} alt='banner' className='hero-banner-imgs' />
         </Box>

@@ -16,7 +16,7 @@ const Navbar = () => {
       </Link>
       <Stack direction='row'gap='40px' alignItems='flex-end' fontSize='20px'>
         <Link to='/' style={{textDecoration:"none",color:'#3A1212',borderBottom:'3px solid #ffc0cb',fontWeight:'bold'}}>Home</Link>
-        <a href="#excercises" style={{textDecoration:"none",color:'#3A1212',fontWeight:'bold'}}>Excercises</a>
+        <a href="#excercises" style={{textDecoration:"none",color:'#3A1212',fontWeight:'bold'}}>Exercises</a>
       </Stack>
     </Stack>
   );
