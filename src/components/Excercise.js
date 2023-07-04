@@ -37,7 +37,7 @@ const endIndex = startIndex + excercisesPerPage;
 const displayedExcercises = excercises.slice(startIndex, endIndex);
 
   return (
-    <Box id='excercises' sx={{marginTop:{lg:'110px'}}} p='20px'>
+    <Box id='excercises' sx={{marginTop:{lg:'20px'}}} p='20px'>
       <Typography variant='h4' mb='46px' >
         Showing <span style={{color:'brown',fontWeight:'bold'}}>Results</span>
       </Typography>

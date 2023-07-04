@@ -17,23 +17,23 @@ body {
   }
   
   .right-arrow,
-  .left-arrow {
-    cursor: pointer;
-    background: transparent;
-    outline: none;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: pink;
-    font-size: 25px;
-    border-radius: 4px;
-    position: absolute;
-    bottom: -20px;
-    right: 80px;
-    transform: scale(1, 1);
-    transition: 0.3s all ease-in-out;
-  }
+.left-arrow {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FF2625;
+  font-size: 25px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -20px;
+  right: 80px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
   
   .right-arrow {
     right: 140px;
@@ -107,7 +107,13 @@ body {
   .bodyPart-card:hover {
     transform: scale(1.1, 1.1);
   }
+  .exercise-card:hover{
+    border-top: 5px solid #653b46 !important;
+  }
   
+  .nav-items:hover{
+    border-bottom: 4px solid pink !important;
+  }
   .search-btn:hover {
     color: #FF2625 !important;
     border: 1px solid #FF2625 !important;
