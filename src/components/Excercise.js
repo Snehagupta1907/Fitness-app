@@ -36,7 +36,6 @@ const startIndex = (currentPage - 1) * excercisesPerPage;
 const endIndex = startIndex + excercisesPerPage;
 const displayedExcercises = excercises.slice(startIndex, endIndex);
 
-  console.log(excercises)
   return (
     <Box id='excercises' sx={{marginTop:{lg:'110px'}}} p='20px'>
       <Typography variant='h4' mb='46px' >

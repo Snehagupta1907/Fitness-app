@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FF2625;
+    color: pink;
     font-size: 25px;
     border-radius: 4px;
     position: absolute;
@@ -51,8 +51,8 @@ body {
   }
   
   .detail-image {
-    width: 729px;
-    height: 742px;
+    width: 629px;
+    height: 642px;
   }
 
     .hero-banner-img {
@@ -81,8 +81,8 @@ body {
   
   
   .exercise-card {
-    width: 400px;
-    height: 445px;
+    width: 300px;
+    height: 345px;
     background: #fff;
     border-bottom-left-radius: 20px;
     text-decoration: none;

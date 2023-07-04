@@ -3,6 +3,7 @@ import React, { useContext } from 'react'
 import BodyPart from './BodyPart'
 import { ScrollMenu } from 'react-horizontal-scrolling-menu'
 import { VisibilityContext } from 'react-horizontal-scrolling-menu'
+import ExcerciseCard from './ExcerciseCard'
 
 import cardioimg from '../assets/icons/equipment.png'
 import allimg from '../assets/icons/gym.png'
@@ -55,12 +56,12 @@ const imgs = [
 
 
 
-const HorizontalScrollbar = ({data,bodyPart,setBodyPart}) => {
+const HorizontalScrollbar = ({data,bodyPart,setBodyPart,bodyParts}) => {
   return (
     <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
         {data.map((item)=>(
         <Box key={item.id||item} itemID={item.id||item} title={item.id||item} margin='0,40px'>
-            <BodyPart item={item} bodyPart={bodyPart} setBodyPart={setBodyPart} imgs={imgs}/>
+            {bodyParts ?<BodyPart item={item} bodyPart={bodyPart} setBodyPart={setBodyPart} imgs={imgs}/>:<ExcerciseCard excercise={item}/>}
         </Box>))}
     </ScrollMenu>
   )
