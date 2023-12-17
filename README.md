@@ -2,6 +2,8 @@
 
 This project is a fitness app built using React.js. It leverages the RapidAPI and YouTube API to fetch exercise data and related YouTube videos, respectively. The Material-UI (Mui) library is also used for achieving responsiveness in the application's design.
 
+Website Link-"https://fitness-app-five-drab.vercel.app/"
+
 ## Features
 
 - **Exercise Data Retrieval**: The app integrates with the RapidAPI to fetch exercise data, including exercise types and descriptions.
